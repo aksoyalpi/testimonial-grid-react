@@ -1,0 +1,86 @@
+.profile-info {
+  display: flex;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  font-family: "Barlow Semi Condensed", serif;
+  background-color: hsl(214, 17%, 92%);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.name {
+  margin-bottom: -15px;
+  color: hsl(214, 17%, 92%);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.subtitle {
+  color: hsl(0, 0%, 81%);
+}
+
+.card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: hsl(263, 55%, 52%);
+  width: 300px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  border: 1px solid hsl(264, 82%, 80%);
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.quote {
+  margin-top: -10px;
+  color: hsl(0, 0%, 81%);
+  font-size: 16px;
+}
+
+.dark-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.white {
+  background-color: hsl(0, 0%, 100%);
+}
+.white .description, .white .name {
+  color: hsl(217, 19%, 35%);
+}
+.white .quote, .white .subtitle {
+  color: hsl(224, 10%, 45%);
+}
+
+.grey {
+  background-color: hsl(217, 19%, 35%);
+}
+
+/*# sourceMappingURL=App.css.map */
