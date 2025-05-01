@@ -8,6 +8,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
+    
     font-family: "Barlow Semi Condensed", serif;
     background-color: colors.$grey100;
     font-size: 13px;
@@ -33,6 +34,7 @@ body {
 }
 
 .card {
+    box-shadow: 0px 10px  30px  colors.$grey400;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -41,6 +43,10 @@ body {
     border-radius: 8px;
     background-color: colors.$purple500;
     width: 300px;
+}
+
+.card:hover {
+    box-shadow: none;
 }
 
 .profile-info {
@@ -85,4 +91,47 @@ img {
 
 .grey {
     background-color: colors.$grey500;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        display: grid;
+        gap: 70px;
+        row-gap: 30px;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    }
+    .card {
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .daniel {
+        grid-area: daniel;
+        background-image: url("./assets/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        
+    }
+    .kira {
+        grid-area: kira;
+    }
+    .jonathan {
+        grid-area: jonathan;
+    }
+    .jeanette {
+        grid-area: jeanette;
+
+        .description {
+            font-size: 26px;
+        }
+    }
+    .patrick {
+        grid-area: patrick;
+    }
+
 }
