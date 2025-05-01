@@ -41,12 +41,14 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- GitHub Pages
 - [Sass](https://sass-lang.com/) - CSS preprocessor
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
 
 - revisited react basics
+- set up custom workflow for github pages
 
 
 ### Continued development
